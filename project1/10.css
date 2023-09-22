@@ -1,0 +1,28 @@
+html {
+  background:;
+}
+
+
+
+
+.dog{
+        display:inline;
+         max-width: 80%;
+         border-radius: 0%;
+         align: center;
+       }
+
+       .flow{
+               display:flow-root;
+
+                align: center;
+              }
+
+
+
+
+
+
+body{
+  text-align: center;
+}
