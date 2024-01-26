@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <button id="startButton">START!</button>
+    </header>
+    <main id="main"></main>
+
+
+    <script>
+        let startBTN = document.getElementById("startButton")
+        let mainELEM = document.getElementById("main")
+        let cocktailURL = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"
+
+        let fetchCocktailData = ()=>{
+            console.info("CLICKED!")
+            fetch(cocktailURL)
+               .then ((response) => response.json())
+               .then((payload) => appendCocktailData(payload))
+        }
+
+        let appendCocktailData = (data) =>{
+
+            let drName = data.title
+            let drImg = data.url
+
+            let nameHolder = document.createElement("h3")
+            nameHolder.innerText + drName
+            mainELEM.appendChild(nameHolder)
+
+            let imageHolder = document.createElement('img')
+            imageHolder.src = drImg
+            mainELEM.appendChild(imageHolder)
+
+
+        }
+
+
+
+        startBTN.addEventListener("click", fetchCocktailData)
+    </script>
+
+</body>
+
+</html>
