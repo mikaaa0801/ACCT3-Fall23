@@ -1,0 +1,114 @@
+
+
+html {
+  background: white;
+  /*background-image:url("../img/018.jpeg");*/
+  background-size:contain;
+  ba
+}
+
+img {opacity: 0;
+}
+img:hover{
+  opacity:1.0;
+}
+
+.img1 {
+  float: left;
+ display: inline ;
+ align: right;
+
+ max-width:40%;
+ /*border-radius: 50%;*/
+
+
+}
+
+
+.dog1{  float: right;
+        display:inline;
+         max-width: 50%;
+         /*border-radius: 50%;*/
+        /* align: center;*/
+       }
+
+       .flow{
+               display:flow-root;
+
+                align: center;
+              }
+
+    .dog2{  float: right;
+                      display:inline;
+                       max-width: 50%;
+                      border-radius: 50%;
+                      /* align: center;*/
+                     }
+
+                     .flow{
+                             display:flow-root;
+
+                              align: center;
+                            }
+
+
+
+                            .dog3{  float:right;
+                                    display:inline;
+                                     max-width: 50%;
+                                     /*border-radius: 50%;*/
+                                    /* align: center;*/
+                                   }
+
+                                   .flow{
+                                           display:flow-root;
+
+                                            align: center;
+                                          }
+
+
+
+
+body{
+  text-align:justify;
+}
+
+video{
+  border-radius: 0%;
+}
+.common2{
+  color: black ;
+  font-size: 70px;
+  /*background: black;*/
+  border-right:300px;
+  padding:20px;
+  margin:10px;
+  text-align:left;
+  /*border-radius: 50%;*/
+  font-family:cursive;
+  }
+
+  .common1{
+    color: black;
+    font-size: 20px;
+
+    border: 1px:
+    padding:50px;
+    margin:5px;
+    text-align:left;
+    font-family:cursive;
+    }
+    .common{
+      color: white ;
+      font-size: 30px;
+      background: black;
+      border: 40px:
+      padding:50px;
+      margin:40px;
+      align:left;
+      border-radius: 60%;
+      display: inline-block;
+      font-family:cursive;
+
+
+      }

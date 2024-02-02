@@ -6,19 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-</head>
+</head>111
 
 <body>
     <header>
         <button id="startButton">START!</button>
+        <button id="Button1">kk</button>
     </header>
     <main id="main"></main>
 
 
     <script>
         let startBTN = document.getElementById("startButton")
+        let BTN1 = document.getElementById("Button1")
         let mainELEM = document.getElementById("main")
         let cocktailURL = "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"
+        let Btn1URL = "https://api.nasa.gov/planetary/earth/assets?lon=100.75&lat=1.5&date=2014-02-01&dim=0.15&api_key=DEMO_KEY"
 
         let fetchCocktailData = ()=>{
             console.info("CLICKED!")
@@ -27,9 +30,16 @@
                .then((payload) => appendCocktailData(payload))
         }
 
+        let fetchBtn1Data = ()=>{
+            console.info("CLICKED!")
+            fetch(Btn1URL)
+               .then ((response) => response.json())
+               .then((payload) => appendCocktailData(payload))
+        }
+
         let appendCocktailData = (data) =>{
 
-            let drName = data.title
+            let drName = data.date
             let drImg = data.url
 
             let nameHolder = document.createElement("h3")
@@ -46,6 +56,7 @@
 
 
         startBTN.addEventListener("click", fetchCocktailData)
+        BTN1.addEventListener("click", fetchBtn1Data)
     </script>
 
 </body>
