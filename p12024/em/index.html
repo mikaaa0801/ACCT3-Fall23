@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Documentt t</title>
     <script src="./js/jquery-3.5.1.js"></script>
     <style>
         *{
@@ -127,7 +127,7 @@ img:not([src]) {
              console.log(text);
 
         });
-    
+
           $.get('https://poetrydb.org/title/Ozymandias/lines.json',(data)=>{
             let num  = Math.floor(Math.random()*data[0].lines.length-1)
              let text = data[0].lines[num]
@@ -137,14 +137,14 @@ img:not([src]) {
             console.log(arrImg);
         if(!arrImg.length){
            $.get('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=DEMO_KEY',(data)=>{
-            arrImg =data.photos 
+            arrImg =data.photos
             let num  = Math.floor(Math.random()*arrImg.length-1)
             let img_src = arrImg[num].img_src
             let reg = /^["|'](.*)["|']$/g;
               console.log(img_src.replace(reg,"$1"));
             img_src = img_src.replace(reg,"$1");
             document.querySelector('.img_box>img').src = img_src
-       
+
         });
         }else{
             let num  = Math.floor(Math.random()*arrImg.length-1)
@@ -172,11 +172,11 @@ img:not([src]) {
              $('.text2').html(text)
               console.log(text);
         });
-    
+
          setbg()
          $('.content').fadeIn()
         })
-        
+
         const setbg=()=>{
            ++index
            if(index>3){
