@@ -17,18 +17,18 @@ img:hover{
  display: inline ;
  align: right;
 
- max-width:40%;
+ max-width:70%;
  /*border-radius: 50%;*/
 
 
 }
 
 
-.dog1{  float: right;
+.dog1{  float:center;
         display:inline;
-         max-width: 50%;
+         max-width: 100%;
          /*border-radius: 50%;*/
-        /* align: center;*/
+        /*align: center;*/
        }
 
        .flow{
@@ -37,9 +37,9 @@ img:hover{
                 align: center;
               }
 
-    .dog2{  float:left1;
+    .dog2{  float: righ;
                       display:inline;
-                       max-width: 100%;
+                       max-width: 40%;
                       /*border-radius: 50%;
                       /* align: center;*/
                      }
@@ -52,18 +52,48 @@ img:hover{
 
 
 
-                            .dog3{  float:right;
+                            .dog3{  float:left;
                                     display:inline;
                                      max-width: 50%;
                                      /*border-radius: 50%;*/
                                     /* align: center;*/
                                    }
+                                   .dog4{  float:left;
+                                           display:inline;
+                                            max-width: 50%;
+                                            /*border-radius: 50%;*/
+                                           /* align: center;*/
+                                          }
 
                                    .flow{
                                            display:flow-root;
 
                                             align: center;
                                           }
+                                          .dog5{  float:left;
+                                                  display:inline;
+                                                   max-width: 26%;
+                                                 }
+                                                 .flow{
+                                                         display:flow-root;
+
+                                                          align: center;
+                                                        }
+
+      .dog6{  float:righ;
+                                                                          display:inline;
+                                                                           max-width: 49%;
+                                                                          /*border-radius: 50%;
+                                                                          /* align: center;*/
+                                                                         }
+
+                                                                         .flow{
+                                                                                 display:flow-root;
+
+                                                                                  align: center;
+                                                                                }
+
+
 
 
 
