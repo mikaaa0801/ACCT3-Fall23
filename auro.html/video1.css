@@ -1,0 +1,66 @@
+html {
+  
+}
+#myvideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+img {opacity: 0.4;
+}
+img:hover{
+  opacity:1.0;
+}
+
+
+
+.dog{
+        display:inline;
+         max-width: 25%;
+         border-radius: 50%;
+         align: center;
+       }
+
+       .flow{
+               display:flow-root;
+
+                align: center;
+              }
+
+
+
+
+
+
+body{
+  text-align: center;
+}
+
+video{
+  border-radius: 0%;
+}
+.common2{
+  color: white ;
+  font-size: 40px;
+  background: black;
+  border: 10px
+  padding:40px;
+  margin:60px;
+  text-align:center;
+  border-radius: 50%;
+  font-family:cursive;
+  }
+
+  .common1{
+    color: white ;
+    font-size: 20px;
+    background: black;
+    border: 100px:
+    padding:50px;
+    margin:50px;
+    text-align:center;
+    border-radius: 0%;
+    font-family:cursive;
+    }
