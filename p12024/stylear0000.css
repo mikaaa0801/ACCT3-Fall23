@@ -1,7 +1,7 @@
 
 
 html {
-  background: yellow;
+  background: black;
   /*background-image:url("../img/018.jpeg");*/
   background-size:contain;
   ba
@@ -106,7 +106,7 @@ video{
   border-radius: 0%;
 }
 .common2{
-  color: black ;
+  color: white ;
   font-size: 50px;
   /*background: black;*/
   border-right:300px;
@@ -118,7 +118,7 @@ video{
   }
 
   .common1{
-    color: black;
+    color: white;
     font-size: 20px;
 
     border: 1px:
